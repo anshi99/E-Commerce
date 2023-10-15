@@ -1,0 +1,90 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+
+    <title>eCommerce Product Detail</title>
+    
+    <h2>Product Detail</h2>
+  </head>
+
+  <body>
+    <div style="text-align: center;"> <h2>Product Detail</h2> </div>
+
+    <br>
+    <br>
+    <br>
+
+
+	<div class="container">
+		<div class="card">
+			<div class="container-fliud">
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+						
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><img [src]="url + [product.name]" /></div>
+						
+						
+					</div>
+                </div>
+					<div class="details col-md-6">
+						<h3 class="product-title">{{product.productName}}</h3>
+						
+						<p class="product-description">{{product.description}}</p>
+						<h4 class="price">current price: ₹ <span>{{product.price}}</span></h4>
+						
+				
+						
+		<form [formGroup]="search" >
+    
+        <h4><label for="email" style="color: #000000;">Serviceability :</label></h4>
+      <input type="text" class="form-control" formControlName="pincode" placeholder="Enter pincode" > 
+
+	  <br>
+	  <div>
+		<!-- <span class="alert" *ngIf="f['pincode'].errors?.['required'] && (f['pincode'].touched || 
+		f['pincode'].dirty)">This Field Cannot Be Empty!</span> -->
+
+		<!-- <span class="alert" *ngIf="f['pincode'].errors?.['minLength'] || (f['pincode'].touched ||
+		f['pincode'].dirty)">Check Your Pincode!</span> -->
+		<p *ngIf="f['pincode'].touched && f['pincode'].invalid" style="color: red;">
+
+			Check You Pincode
+
+		 </p>
+	  </div>
+			<!-- <p *ngIf="f['pincode'].touched && f['pincode'].invalid">invalid pincode</p> -->
+
+			<br><br>
+			<button class="add-to-cart btn btn-default" type="submit" (click)="findDays()" [disabled]="search.invalid" >Check Deliverability</button>
+			</form>
+<br><br>
+<br>
+<div>
+			<div *ngIf="searchFlag" class="alert alert-primary" role="alert"> Expected Delivery date is {{mydate}} </div>
+
+			<div *ngIf="searchFlag1" class="alert alert-danger" role="alert"> Delivery is not available </div>
+		</div>
+    
+
+					<br>
+					<br>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  </body>
+</html>
+
+
+<div>{{sample}}</div>
+
+
+
+

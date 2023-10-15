@@ -1,0 +1,27 @@
+<p>appproduct works!</p>
+<p></p>
+<div class="container">
+    <h2>Add new User</h2>
+
+    <form #adduserform="ngForm" (ngSubmit)="addProductformsubmit()">
+        <!-- <div class="form-group">
+            <label for="name">Product code:</label>
+            <input type="text" class="form-control" required [(ngModel)]="product.id" name="id">
+        </div>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" required [(ngModel)]="product.name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="name">Brand:</label>
+            <input type="text" class="form-control" required [(ngModel)]="product.brand" name="brand">
+        </div>
+        <div class="form-group">
+            <label for="name">Price:</label>
+            <input type="text" class="form-control" required [(ngModel)]="product.price" name="price"> 
+        </div>-->
+
+        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="button" class="btn btn-primary" (click)="gotolist()">Back</button>
+    </form>
+</div>

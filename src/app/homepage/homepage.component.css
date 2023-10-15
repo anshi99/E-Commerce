@@ -1,0 +1,19 @@
+.image{
+    height:35em; background-size:cover; width:auto;
+    background-position:50% 50%;
+  }
+
+  #bottom {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+  }
+
+  #left {
+    position: absolute;
+    left: 92%;
+  }
+
+  .navbar-fixed-top {
+    height: 50px; /* Whatever you want. */
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    display: grid;
+   place-items: center;
+    font-family: 'Manrope', sans-serif;
+   background: red;
+    
+}
+.image{
+    height:45em; background-size:cover; width:auto;
+    background-image:url("/assets/images/backg.jpg");
+    background-position:50% 50%;
+  }
+
+  #left {
+    position: absolute;
+    left: 90%;
+  }
+  .btn-info{
+    background-color: #3a0579;
+    color:#fff
+  }
+
+  
+  .navbar-fixed-top {
+    height: 50px; /* Whatever you want. */
+}
+
+.brandname{
+
+  width: 100px;
+  margin-left: 15px;
+}
+
+.brandsearch{
+
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.pricecss{
+
+  margin-left: 60px;
+  margin-top: 23px;
+
+}
+
+.pricecheck{
+
+  margin-left: 15px;
+  
+}
